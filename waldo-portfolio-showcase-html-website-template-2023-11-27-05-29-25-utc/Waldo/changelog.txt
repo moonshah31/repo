@@ -1,0 +1,145 @@
+/////////////////////////////////////////////////////
+
+WALDO - Responsive HTML5 Portfolio Website Template
+
+Changelog:
+
+/////////////////////////////////////////////////////
+
+
+======================
+Updating information:
+======================
+
+Explanation: Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. 
+All code changes and updates must be made manually!
+
+IMPORTANT!: Before you proceed to update, make sure that you have made copies of all the template files, in case something goes wrong then you can restore the previous version.
+
+The best way to update the template is to use some file comparison software to compare the differences between the old and new template versions (I recommend “WinMerge”: http://winmerge.org/). Then make the necessary changes. I know this may be time-consuming, but unfortunately, there is no easier solution.
+
+
+
+
+------------------------
+v1.7 – 18 February 2023
+------------------------
+
+- Updated: "jQuery" to the latest version.
+- Updated: "jQuery UI" to the latest version.
+
+
+
+
+-------------------
+v1.6 – 26 May 2022
+-------------------
+
+- Fixed: Slideshow animation issue.
+- Removed: File "animate.css".
+- Improved: Google Analytics.
+
+
+Changed template files:
+
+- theme.css
+- All .html files
+
+
+
+
+----------------------
+v1.5 – 05 August 2021
+----------------------
+
+- Updated: "jQuery" to the latest version.
+- Updated: "Fontawesome" to the latest version (free version).
+- Updated: "YTPlayer" to the latest version.
+- Updated: "jQuery Easing Plugin" to the latest version.
+
+
+
+-------------------------
+v1.4 – 12 September 2020
+-------------------------
+
+- Updated: "Fontawesome" to the latest version (free version).
+- Updated: "YTPlayer" to the latest version.
+- Updated: "Animate.css" to the latest version.
+
+
+
+------------------------
+v1.3 - 27 October 2019
+------------------------
+
+- Updated: "Font Awesome" to the latest version (free version).
+- Updated: "YTPlayer" to the latest version.
+- Updated: "animate.min.css" to the latest version.
+- Updated: "Isotope" to the latest version.
+- Fixed: Missing icons on blog list items.
+- Removed: Page smooh scroll plugin.
+- Minor CSS improvements.
+
+
+Changed template files:
+
+- theme.js
+- theme.css
+- All HTML files
+
+
+
+----------------------
+v1.2 - 22 March 2018
+----------------------
+
+- Updated: "Font Awesome" to the latest version (free version).
+- Updated: "YTPlayer" to the latest version.
+- Updated: "imagesLoaded" to the latest version.
+- Updated: "Isotope" to the latest version.
+- Updated: "animate.min.css" to the latest version.
+- Improved: Documentation.
+- Minor CSS improvements.
+
+
+Changed template files:
+
+- theme.css
+- All HTML files
+
+
+
+---------------------
+v1.1 - 26 June 2017
+---------------------
+
+- Updated: "jQuery" to the latest version.
+- Updated: "Bootstrap" to the latest version.
+- Updated: "Font Awesome" to the latest version.
+- Updated: "OWL Carousel" to the latest version.
+- Updated: "YTPlayer" to the latest version.
+- Updated: "imagesLoaded" to the latest version.
+- Updated: "Isotope" to the latest version.
+- Fixed: Shop item hover issue on iOS.
+  
+
+Changed template files:
+
+- theme.js
+- All HTML files
+
+
+
+--------------------------
+v1.0 - 24 September 2016
+--------------------------
+
+Initial Release.
+
+
+
+
+
+
+
