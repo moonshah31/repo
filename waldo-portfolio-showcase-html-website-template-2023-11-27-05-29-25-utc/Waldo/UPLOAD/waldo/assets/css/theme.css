@@ -95,9 +95,10 @@ html {
 }
 body {
 	position: relative;
-	background-color: #03009b;
-	padding: 0;
-	margin: 0;
+	padding-bottom: 0;
+	background-color: transparent;
+	padding: auto;
+	margin: auto;
 	font-family: 'Ubuntu Mono', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-size: 20px;
@@ -180,7 +181,7 @@ p {
 	height: 3px;
 }
 
-/* page overflow (uncomment if needed) */
+/* page overflow (uncomment if needed) 
 .pace-active {
 	/*position: absolute;
 	top: 0;
@@ -188,8 +189,8 @@ p {
 	right: 0;
 	bottom: 0;
 	z-index: 99999;
-	background-color: #FFF;*/
-}
+	background-color: #FFF;
+}*/
 
 
 /* --------------------------------------------------- *
@@ -197,13 +198,16 @@ p {
 /* --------------------------------------------------- */
 
 #body-content {
+	padding-bottom: 0;
+	margin-bottom: 0;
 	position: relative;
-	background-color: #2904ad;
+	background-color: transparent;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-o-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
+	
 }
 
 
@@ -213,15 +217,16 @@ p {
 
 #content-container {
 	position: relative;
-	background-color: #000a97;
+	background-color: transparent;
+	margin-bottom: 0 !important;
 	z-index: 2;
 }
-@media (max-width: 992px) {
+@media (max-width: 375px) {
 	#content-container {
 		margin-bottom: 0 !important;
 	}
 }
-
+ 
 
 /* --------------------------------------------------- *
  * Header
@@ -8662,7 +8667,7 @@ label {
 	
 	position: relative;
 	background-color: #FFF;
-	padding: 100px 0;
+	padding: 120px;
 }
 @media (max-width: 992px) {
 	#footer {
