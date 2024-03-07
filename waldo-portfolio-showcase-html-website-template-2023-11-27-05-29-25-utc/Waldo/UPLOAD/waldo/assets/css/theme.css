@@ -102,7 +102,7 @@ body {
 	font-family: 'Ubuntu Mono', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-size: 20px;
-	color: #a0aa10;
+	color: #10a5ca;
 }
 
 a {
@@ -1932,7 +1932,7 @@ section {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: #051070;
+	background-color: #1284ee;
 	opacity: 0;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -2144,7 +2144,7 @@ section {
 	position: absolute;
 	top: 0;
 	left: 4%;
-	background-color: #0e008f;
+	background-color: #1b7dda;
 	margin: 0;
 	padding: 0 5px;
 	font-size: 28px;
@@ -2480,7 +2480,7 @@ section {
 	position: absolute;
 	top: 0;
 	left: 4%;
-	background-color: #4c00ff;
+	background-color: #27b0e6;
 	margin: 0;
 	padding: 0 5px;
 	font-size: 28px;

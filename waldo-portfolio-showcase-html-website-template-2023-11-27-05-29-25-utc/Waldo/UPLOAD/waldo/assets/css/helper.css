@@ -558,7 +558,7 @@
 
 .no-bg { background: none !important; } /* 100% transparent (no background image, no background color) */
 
-.bg-main { background-color: #120583 !important; } /* Template main color */
+.bg-main { background-color: #14a3db !important; } /* Template main color */
 .bg-main-2 { background-color: #fff58e !important; } /* Template main color light version */
 .bg-main-3 { background-color: #fffcd6 !important; } /* Template main color lightest version */
 .bg-white { background-color: #FFF !important; }
@@ -570,7 +570,7 @@
 .bg-dark-3 { background-color: #222 !important; }
 .bg-green { background-color: #69CE00 !important; }
 .bg-blue { background-color: #1868c7 !important; }
-.bg-yellow { background-color: #04028d !important; }
+.bg-yellow { background-color: #1387bd !important; }
 .bg-red { background-color: #e8000b !important; }
 .bg-brown { background-color: #A78339 !important; }
 .bg-purple { background-color: #800080 !important; }
