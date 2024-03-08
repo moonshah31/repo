@@ -8782,13 +8782,13 @@ input#footer-subscribe {
 }
 
 /* fixed footer (no effect on small devices) */
-@media (min-width: 992px) {
+@media (min-width: 600px) {
 	#footer.fixed-footer {
 		position: relative;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: auto;
+		height: 300px;
 		z-index: 3;
 	}
 	/* if magnific popup is open */
