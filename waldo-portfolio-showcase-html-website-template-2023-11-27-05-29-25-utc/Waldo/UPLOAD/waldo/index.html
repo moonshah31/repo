@@ -9,7 +9,6 @@
 
 <html lang="en">
 	<head>
-		
 
 		<!-- Title -->
 		<title>Home - Waldo</title>
@@ -49,15 +48,13 @@
 
 	</head>
 
-	<body>
-		
+	<body style="overflow-y: scroll;">
 
 		<!-- Begin global search (simple) 
 		==================================
 		* Use class "gl-search-dark" to enable global search dark style.
 		-->
-		<div id="global-search" class="gl-s">
-		
+		<div id="global-search" class="gl-s gls-simple">
 			
 			<!-- Begin global search close button -->
 			<div class="global-search-close-wrap">
@@ -75,8 +72,8 @@
 
 		</div>
 		<!-- End global search -->
-	
 
+		
 		<!-- ===================
 		///// Begin header /////
 		==================== -->
@@ -85,8 +82,7 @@
 			<!-- Begin logo
 			================ -->
 			<div id="logo">
-				
-				<a href="index.html"><img src="assets/img/tech.png" title="Home" alt="logo" height="200" width="200"></a>
+				<a href="index.html"><img src="assets/img/tech.png" height="200" width="200" title="Home" alt="logo"></a>
 			</div>
 			<!-- End logo -->
 
@@ -129,12 +125,12 @@
 									<ul class="sub-menu">
 										<li><a href="portfolio-list.html">Portfolio List v.1</a></li>
 										<li><a href="portfolio-list-2.html">Portfolio List v.2</a></li>
-										<li><a href="portfolio-single-1.html">Application Development </a></li>
-										<li><a href="portfolio-single-2.html">Website Development</a></li>
-										<li><a href="portfolio-single-3.html">Graphic Designing</a></li>
-										<li><a href="portfolio-single-4.html">Animation</a></li>
-										<li><a href="portfolio-single-5.html">Twitch</a></li>
-										<li><a href="portfolio-single-6.html">3D-Modeling</a></li>
+										<li><a href="portfolio-single-1.html">Single Item v.1</a></li>
+										<li><a href="portfolio-single-2.html">Single Item v.2</a></li>
+										<li><a href="portfolio-single-3.html">Single Item v.3</a></li>
+										<li><a href="portfolio-single-4.html">Single Item v.4</a></li>
+										<li><a href="portfolio-single-5.html">Single Item v.5</a></li>
+										<li><a href="portfolio-single-6.html">Single Item v.6</a></li>
 									</ul>
 								</li>
 								<li class="has-children">
@@ -196,12 +192,12 @@
 								<!-- Begin social buttons -->
 								<div class="social-buttons">
 									<ul>
-										<li><a href="https://www.facebook.com/techlonglobal/" class="btn btn-primary btn-link" target="_blank" title="Follow us on facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on facebook"><i class="fab fa-facebook-f"></i></a></li>
 										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on twitter"><i class="fab fa-twitter"></i></a></li>
-								
+										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on dribbble"><i class="fab fa-dribbble"></i></a></li>
 										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on behance"><i class="fab fa-behance"></i></a></li>
-										<li><a href="https://www.linkedin.com/company/techloneglobalserves" class="btn btn-primary btn-link" target="_blank" title="Follow us on linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-						
+										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on youtube"><i class="fab fa-youtube"></i></a></li>
 									</ul>
 								</div>
 								<!-- End social buttons -->
@@ -232,29 +228,17 @@
 				<ul>
 					<li>
 						<!-- Begin menu trigger -->
-						<div id="menu-trigger">
-							<div class="mt-inner">
-								<div class="menu-str">
-									<span class="str-1"></span>
-									<span class="str-2"></span>
-									<span class="str-3"></span>
-								</div>
-							</div>
-							<div class="mt-text">Menu</div>
-						</div>
+						
 						<!-- End menu trigger -->
 					</li>
 
 					<li>
 						<!-- Begin global search trigger -->
-						<div id="global-search-trigger">
-							<a href="#0" class="gst-icon" title="Search...">
-								<i class="fas fa-search"></i>
-							</a>
-						</div>
+						
 						<!-- End global search trigger -->
 					</li>
-				</ul> 
+				</ul>
+				
 			</div>
 			<!-- End header attriputes -->
 
@@ -270,10 +254,10 @@
 			<!-- Begin content container -->
 			<div id="content-container">
 
-				<!-- ==============================
-				///// Begin intro (slideshow) /////
-				=============================== -->
-				<section id="intro" class="slideshow bg-dark">
+				<!-- ===================================
+				///// Begin portfolio list section /////
+				==================================== -->
+				<section id="portfolio-list-section">
 
 					<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 					====================================================================
@@ -310,323 +294,143 @@
 							data-dots="false"....................(true/false)
 							data-dots-speed="800"................(milliseconds)
 					-->
-					<div class="owl-carousel cursor-grab fade-out-scroll-5 nav-bottom-right" data-items="1" data-dots="false" data-nav="true">
+					<div class="owl-carousel cursor-grab nav-bottom-right" data-items="4" data-loop="true" data-margin="0" data-dots="false" data-nav="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
 
 						<!-- Begin carousel item 
 						========================= -->
-						<div class="cc-item parallax bg-image" style="background-image: url(assets/img/background3.webp); background-position: top left ;" data-percent-height="0.9">
-
-							<!-- Begin caption -->
-							<div class="cc-caption intro-caption bottom-left caption-animate">
-								<h1 class="intro-title">Welcome,<br>to TechloneGlobal</h1>
-								<div class="intro-sub-title-wrap max-width-400"> <!-- max width class is optional -->
-									<h2 class="intro-sub-title">
-										We are a creative design company that creates cool projects. :)
-									</h2>
-								</div>
-							</div>
-							<!-- End caption -->
-
-						</div>
-						<!-- End carousel item -->
-
-						<!-- Begin carousel item 
-						========================= -->
-						<div class="cc-item parallax bg-image" style="background-image: url(assets/img/arsal.jpg); height: 400; width: 400; background-position: 50% 50%;" data-percent-height="1">
+						<div class="cc-item bg-image" style="background-image: url(assets/img/twitchcover.webp); background-position: 50% 50%;" data-percent-height="1" ">
 							
 							<!-- Begin caption -->
-							<div class="cc-caption intro-caption bottom-left caption-animate">
-								<h1 class="intro-title">Arsal bhai</h1>
-								<div class="intro-sub-title-wrap">
-									<h2 class="intro-sub-title">
-										Senior Developer
-									</h2>
-								</div>
-							</div>
-							<!-- End caption -->
-
-						</div>
-						<!-- End carousel item -->
-
-						<!-- Begin carousel item 
-						========================= -->
-						<div class="cc-item parallax bg-image" style="background-image: url(assets/img/intro/intro-bg-3.jpg); background-position: 50% 55%;" data-percent-height="0.9">
-							
-							<!-- Begin caption -->
-							<div class="cc-caption intro-caption bottom-left caption-animate">
-								<h1 class="intro-title">The Old<br>Typewriter</h1>
-								<div class="intro-sub-title-wrap">
-									<h2 class="intro-sub-title">
-										How cool is that?
-									</h2>
-								</div>
-							</div>
-							<!-- End caption -->
-
-						</div>
-						<!-- End carousel item -->
-
-						<!-- Begin carousel item 
-						========================= -->
-						<!-- <div class="cc-item parallax" data-percent-height="0.9">
-								
-							<a class="owl-video" href="https://vimeo.com/99653121"></a>
-
 							<div class="cc-caption bottom-left">
-								<h1 class="intro-title">Print Designer<br>Michael Smith</h1>
+								<div><h1 class="cc-title cc-title-xlg">Twitch</h1></div>
+								<a href="portfolio-single-5.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
 							</div>
+							<!-- End caption -->
 
-						</div> -->
+						</div>
 						<!-- End carousel item -->
+
+						
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item bg-image" style="background-image: url(assets/img/modelling.webp); background-position: 50% 50%;" data-percent-height="1">
+							
+							<!-- Begin caption -->
+							<div class="cc-caption bottom-left">
+								<div><h1 class="cc-title cc-title-xlg">3D-Modeling</h1></div>
+								<a href="portfolio-single-6.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item bg-image" style="background-image: url(assets/img/bitcoin.webp); background-position: 50% 50%;" data-percent-height="1">
+							
+							<!-- Begin caption -->
+							<div class="cc-caption bottom-left">
+								<div><h1 class="cc-title cc-title-xlg">Blockchain Development</h1></div>
+								<a href="portfolio-single-7.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item bg-image" style="background-image: url(assets/img/appcover.webp); background-position: 50% 50%;; "data-percent-height="1">
+
+							<!-- Begin caption -->
+							<div class="cc-caption bottom-left">
+								<div><h1 class="cc-title cc-title-xlg">Application Development</h1></div>
+								<a href="portfolio-single-1.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item bg-image" style="background-image: url(assets/img/website.png); background-position: 50% 50%;" data-percent-height="1">
+							
+							<!-- Begin caption -->
+							<div class="cc-caption bottom-left">
+								<div><h1 class="cc-title cc-title-xlg"> Website Development </h1></div>
+								<a href="portfolio-single-2.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item bg-image" style="background-image: url(assets/img/graphiccover.webp); background-position: 50% 50%;" data-percent-height="1">
+							
+							<!-- Begin caption -->
+							<div class="cc-caption bottom-left">
+								<div><h1 class="cc-title cc-title-xlg">Graphic Designing </h1></div>
+								<a href="portfolio-single-3.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						
+						<!-- End carousel item -->
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item" data-percent-height="1">
+
+							<!-- Begin YTPlayer (Youtube video background)
+							=======================================================
+							* NOTE: Replace videoURL with your own (videoURL:'your-youtube-video-URL'). 
+							* Do not forget to add your background image in case the video doesn't load.
+							* YTPlayer may not work in the local computer. It works properly only if used under a web server.
+							* Read more info about YTPlayer: https://github.com/pupunzi/jquery.mb.YTPlayer
+							-->
+							<div class="youtube-bg-wrap ytp-full"> <!-- Class "ytp-full" is for full size. -->
+								<div class="youtube-bg parallax fade-out-scroll-5" 
+									style="background-image: url(assets/img/video-bg/video-bg-1.jpg);"
+									data-property="{
+										videoURL: 'https://youtu.be/YoOG5H4603Y',
+										containment: 'self',
+										quality: 'high',
+										startAt: 0,
+										stopAt: 0,
+										autoPlay: true,
+										loop: true,
+										mute: true,
+										showControls: false,
+										showYTLogo: false,
+										realfullscreen: true,
+										addRaster: false,
+										optimizeDisplay: true,
+										stopMovieOnBlur: true,
+										playOnlyIfVisible: false,
+										useOnMobile: true
+									}">
+		
+									<!-- Begin page header caption -->
+									<div class="page-header-caption">
+										<h1 class="page-header-title">Animation</h1>
+										<a href="portfolio-single-4.html" class="btn btn-primary btn-sm margin-top-15">Open Project</a>
+									</div>
+						
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->0
 
 					</div>
 					<!-- End content carousel -->
-
-				</section>
-				<!-- End intro -->
-
-
-				<!-- ===================================
-				///// Begin portfolio list section /////
-				==================================== -->
-				<section id="portfolio-list-section">
-					<div class="isotope-wrap">
-						
-						<!-- Begin isotope
-						===================
-						* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
-						* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
-						-->
-						<div class="isotope col-3">
-
-							<!-- Begin isotope items wrap 
-							==============================
-							* Use class "iso-boxed" to enable boxed layout.
-							* Use class "pli-caption-center" to enable caption center position.
-							* Use class "pli-caption-alter" to enable caption alternative style.
-							-->
-							<div class="isotope-items-wrap pli-caption-alter">
-
-								<!-- Grid sizer (do not remove!!!) -->
-								<div class="grid-sizer"></div>
-
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-2">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-1.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/appcover.jpg); background-position: 20% 20%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												
-												<div><h2 class="pli-title">App Development</h2></div>
-											
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-2.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/website.png) ; background-position: 50% 50%" >
-										<div class="pli-hover">
-											<div class="pli-caption">
-
-												
-												<div><h2 class="pli-title">Website Development
-						
-												</h2></div>
-												<div><span class="pli-category"></span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-3.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/graphiccover.jpg); background-position: 50% 50%">
-										<div class="pli-hover">
-											
-											<div class="pli-caption">
-												
-												<div><h2 class="pli-title">Graphic Designing</h2></div>
-												<div><span class="pli-category">2D,3D</span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-4.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/animationcover.jpg); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">Animation</h2></div>
-												<div><span class="pli-category">2D,3D</span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-2">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-5.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/twitchcover.webp); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">Twitch Packages</h2></div>
-												<div><span class="pli-category">Twitch, Graphic Designing
-													
-												</span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-2">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-2.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/website.png); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">Website Development</h2></div>
-												<div><span class="pli-category"></span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-6.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/modelling.jpg); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">3D-Modeling
-												
-												</h2></div>
-												<div><span class="pli-category"></span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-7.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/illustration.jpg); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">Illustrations</h2></div>
-												<div><span class="pli-category">2D, 3D</span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								<div class="isotope-item iso-height-1">
-
-									<!-- Begin portfolio list item -->
-									<a href="portfolio-single-8.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/webdesign.webp); background-position: 50% 50%">
-										<div class="pli-hover">
-											<div class="pli-caption">
-												<div><h2 class="pli-title">Website Redesigning</h2></div>
-												<div><span class="pli-category">Revamp</span></div>
-											</div>
-											<div class="pli-arrow"></div>
-										</div>
-									</a>
-									<!-- End portfolio list item -->
-
-								</div>
-								<!-- End isotope item -->
-
-							</div>
-							<!-- End isotope items wrap -->
-
-						</div>
-						<!-- End isotope -->
-
-					</div> <!-- /.isotope-wrap -->
+					
 				</section>
 				<!-- End section -->
 
@@ -639,71 +443,7 @@
 			========================
 			* Use class "fixed-footer" to enable fixed footer (no effect on small devices).
 			-->
-			<footer id="footer" class="fixed-footer bg-dark text-gray-2">
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-4">
-
-							<!-- Begin footer text -->
-							<div class="footer-text">
-								<h4>- Information</h4>
-								Welcome to Techlone Global, where innovation meets excellence in the realm of software solutions.
-							</div>
-							<!-- End footer text -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-4 text-center">
-
-							<!-- Begin footer logo -->
-							<div class="footer-logo margin-top-40 margin-bottom-40">
-								<a href="index.html"><img src="assets/img/tech.png" title="Home" alt="logo"></a>
-							</div>
-							<!-- End footer logo -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-4">
-
-							<!-- Begin social buttons -->
-							<div class="social-buttons margin-bottom-15">
-								<ul>
-									<li><a href="https://www.facebook.com/techlonglobal/" class="btn btn-primary btn-link" target="_blank" title="Follow us on facebook"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on twitter"><i class="fab fa-twitter"></i></a></li>
-					
-									<li><a href="#" class="btn btn-primary btn-link" target="_blank" title="Follow us on behance"><i class="fab fa-behance"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/techloneglobalserves" class="btn btn-primary btn-link" target="_blank" title="Follow us on linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-
-								</ul>
-							</div>
-							<!-- End social buttons -->
-
-							<!-- Begin subscribe form -->
-							<form id="footer-subscribe-form" class="form-btn-inside">
-								<div class="form-group">
-									<input type="email" class="form-control no-bg" id="footer-subscribe" name="subscribe" placeholder="Subscribe. Enter your email address..." required="">
-									<button class="bg-yellow" type="submit"><i class="fas fa-envelope"></i></button>
-								</div>
-							</form>
-							<!-- End subscribe form -->
-
-							<!-- Begin copyright -->
-							<div class="copyright">
-								Copyright 2016 / All rights reserved <br>
-								Designed by <a target="_blank" href="http://themeforest.net/user/themetorium/portfolio">Themetorium</a>
-							</div>
-							<!-- End copyright -->
-
-						</div> <!-- /.col -->
-
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-
-				<!-- Scroll to top button -->
-				<a href="#body-content" class="scrolltotop sm-scroll"></a>
-
-			</footer>
+			
 			<!-- End footer -->
 
 

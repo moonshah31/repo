@@ -1939,6 +1939,7 @@ section {
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	cursor: url("../img/crosshair-dark.png") 20 20, crosshair;
 }
 .portfolio-list-item:hover .pli-hover {
 	opacity: 0.5;
@@ -2168,9 +2169,12 @@ section {
 	position: relative;
 	display: block;
 	overflow: hidden;
+	text-align: center;
 }
 .ps-gallery-item .ps-gallery-item-image {
 	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -3912,6 +3916,8 @@ section {
 	cursor: pointer;
 }
 
+
+    /* You can set additional styling properties for the image here if needed */
 
 /* ------------------------------------------------------------- *
  * Blog single nav (Next/Prev post)
@@ -6556,11 +6562,15 @@ input.cart-plus-minus-box:focus {
 .owl-carousel .cc-item {
 	position: relative;
 	display: block;
-	overflow: hidden;
+	overflow: visible;
+	margin-right: 0px; margin-left: 0px;
+	
 	
 }
 .owl-carousel .cc-item.bg-image { /* if CC item contains background image */
 	min-height: 300px;
+	
+	
 }
 
 /* CC caption */
