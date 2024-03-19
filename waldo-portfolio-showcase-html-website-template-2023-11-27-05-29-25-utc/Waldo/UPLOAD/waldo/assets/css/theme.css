@@ -155,7 +155,9 @@ p {
 	padding-left: 0;
 }
 
-
+.p{
+	text-align: center;
+}
 /* ------------------------------------------------------------- *
  *  Page preloader (display loading animation while page loads)
  *  More info: http://github.hubspot.com/pace/docs/welcome/
@@ -243,6 +245,7 @@ p {
 }
 
 
+  
 /* ------------------------------------------------------------- *
  * Header attriputes
 /* ------------------------------------------------------------- */
@@ -1892,7 +1895,21 @@ section {
 	}
 }
 
-
+/* Define the transition for the image */
+.lulli {
+	transition: opacity 0.5s ease-in-out; /* Transition for opacity with 0.5s duration */
+  }
+  
+  /* Set initial opacity to 1 (fully visible) */
+  .ps-gallery-item .lulli {
+	opacity: 1;
+  }
+  
+  /* Apply transition on hover */
+  .ps-gallery-item:hover .lulli {
+	opacity: 0.7; /* Reduce opacity on hover */
+  }
+  
 /* ------------------------------------------------------------- *
  * Portfolio list section
 /* ------------------------------------------------------------- */
@@ -3552,6 +3569,17 @@ section {
 		transition-delay: 0.2s;
 	}
 }
+
+
+/* Target the section with id 'sad' */
+#sad img {
+    transition: transform 0.5s ease-in-out;
+}
+
+#sad img:hover {
+    transform: scale(1.05);
+}
+
 
 
 /* ------------------------------------------------------------- *
@@ -7396,8 +7424,9 @@ body.modal-open {
 /* ------------------------------------------------------------- */
 
 .call-to-action {
-	background-color: #FFF;
-	padding: 120px 0;
+	background-color: #000000;
+	padding-top: 100px ;
+	
 }
 @media (max-width: 992px) {
 	.call-to-action {
@@ -7406,7 +7435,7 @@ body.modal-open {
 }
 @media (max-width: 768px) {
 	.call-to-action {
-		padding: 60px 0;
+		padding: 60px ;
 	}
 }
 
