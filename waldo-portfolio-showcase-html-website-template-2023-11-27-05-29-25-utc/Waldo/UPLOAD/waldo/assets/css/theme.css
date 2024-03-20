@@ -3572,7 +3572,15 @@ section {
 
 
 /* Target the section with id 'sad' */
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 #sad img {
+	z-index: 99;
+	
     transition: transform 0.5s ease-in-out;
 }
 
