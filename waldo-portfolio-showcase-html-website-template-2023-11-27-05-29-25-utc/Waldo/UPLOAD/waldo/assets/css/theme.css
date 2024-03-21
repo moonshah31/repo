@@ -94,6 +94,7 @@ html {
    -moz-osx-font-smoothing: grayscale;
 }
 body {
+	cursor: url(../img/crosshair-light.png), auto;
 	position: relative;
 	padding-bottom: 0;
 	background-color: transparent;
@@ -276,8 +277,8 @@ p {
 
 #logo {
 	position: absolute;
-	margin-top: 3%;
-	left: 3%;
+	margin-top: 1.5%;
+	left: 2%;
 }
 @media (max-width: 400px) {
 	#logo {
@@ -3576,7 +3577,8 @@ section {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 80%;
+	margin-bottom: 1%;
 }
 #sad img {
 	z-index: 99;
