@@ -105,6 +105,22 @@ body {
 	font-size: 20px;
 	color: #10a5ca;
 }
+@font-face {
+    font-family: 'Gilmer Light';
+    src: url('assets/img/gilmer-light.otf') format('opentype'); /* Specify the path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font to specific HTML elements */
+body {
+    font-family: 'Gilmer Light', sans-serif;
+}
+
+h1, h2, p {
+    font-family: 'Gilmer Light', sans-serif;
+}
+
 
 a {
 	color: #3498DB;
@@ -196,6 +212,7 @@ p {
 }*/
 
 
+
 /* --------------------------------------------------- *
  * Body content section
 /* --------------------------------------------------- */
@@ -279,12 +296,22 @@ p {
 	position: absolute;
 	margin-top: 1.5%;
 	left: 2%;
+	
+	border-radius: 10px;
+	animation: spin 2s linear infinite;
 }
 @media (max-width: 400px) {
 	#logo {
 	}
 }
-
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* End rotation at 360 degrees */
+    }
+}
 
 /* ------------------------------------------------------------- *
  * Menu
@@ -4712,12 +4739,12 @@ section {
 	color: #FFF;
 }
 .sli-btn-cart {
-	background-color: #f3df03;
+	background-color: #0c80ec;
 	color: #222;
 }
 .sli-btn-cart:hover,
 .sli-btn-cart:focus {
-	background-color: #e4d101;
+	background-color: #0c80ec;
 	color: #222;
 }
 
@@ -6325,7 +6352,7 @@ input.cart-plus-minus-box:focus {
 	width: 60px;
 	height: 60px;
 	line-height: 60px;
-	background-color: #0c80ec;
+	background-color: #06a08b;
 	padding: 0;
 	margin: 0;
 	text-align: center;
@@ -6362,7 +6389,7 @@ input.cart-plus-minus-box:focus {
 	opacity: 1;
 }
 .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
-	background-color: #0c80ec;
+	background-color: #06a08b;
 }
 .owl-carousel .owl-nav button.owl-prev {
 	left: 0px;
@@ -6427,7 +6454,7 @@ input.cart-plus-minus-box:focus {
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
-		background-color: #0c80ec;
+		background-color: #06a08b;
 		-webkit-background-size: 67%;
 		background-size: 67%;
 	}
@@ -6450,7 +6477,7 @@ input.cart-plus-minus-box:focus {
 	width: 60px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #0c80ec;
+	background-color: #06a08b;
 	font-size: 14px;
 	color: #FFF;
 	opacity: 1;
@@ -6460,7 +6487,7 @@ input.cart-plus-minus-box:focus {
 	transform: translateY(0);
 }
 .nav-outside-top .owl-nav button.owl-prev:hover, .nav-outside-top .owl-nav button.owl-next:hover {
-	background-color: #0c80ec;
+	background-color: #06a08b;
 	color: #FFF;
 }
 .nav-outside-top .owl-nav button.owl-prev.disabled, .nav-outside-top .owl-nav button.owl-next.disabled {
@@ -6493,7 +6520,7 @@ input.cart-plus-minus-box:focus {
 	width: 60px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #0c80ec;
+	background-color: #06a08b;
 	font-size: 14px;
 	color: #FFF;
 	opacity: 1;
@@ -6649,7 +6676,7 @@ input.cart-plus-minus-box:focus {
 	background-color: #000;
 	margin: 0;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 300;
 	color: #FFF;
 	line-height: 1;
 	opacity: .85;
@@ -6673,7 +6700,7 @@ input.cart-plus-minus-box:focus {
 	font-size: 34px;
 }
 .owl-carousel .cc-title.cc-title-xlg {
-	font-size: 48px;
+	font-size: 28px;
 }
 @media (max-width: 992px) {
 	.owl-carousel .cc-title.cc-title-lg,
@@ -8120,13 +8147,13 @@ label {
 /* Button primary */
 .btn-primary { /* same as template main color */
 	color: #333;
-	background-color: #0c80ec;
-	border-color: #0c80ec;
+	background-color: #06a08b;
+	border-color: #06a08b;
 }
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary {
 	color: #333;
-	background-color:#EFD900;
-	border-color: #EFD900;
+	background-color:#0c80ec;
+	border-color: #0c80ec;
 }
 .btn-primary.btn-link {
 	color: #0c80ec;
@@ -8149,14 +8176,14 @@ label {
 
 /* Button success */
 .btn-success {
-	color: #FFF;
-	background-color: #5cb85c;
-	border-color: #5cb85c;
+	color: #0c80ec;
+	background-color: #0c80ec;
+	border-color: #0c80ec;
 }
 .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success {
 	color: #FFF;
-	background-color: #449d44;
-	border-color: #449d44;
+	background-color: #0c80ec;
+	border-color: #0c80ec;
 }
 .btn-success.btn-link {
 	color: #5cb85c;
