@@ -24,11 +24,91 @@
    // =========================================================================
    // Menu
    // =========================================================================
-   
-  
-  
-   // Start the typewriter effect
-   
+
+   $('#menu-trigger').on("click",function() {
+      $('body').toggleClass('menu-open');
+
+      // trigger animate
+      $("#menu-trigger .str-1").toggleClass("top-animate");
+      $("#menu-trigger .str-2").toggleClass("mid-animate");
+      $("#menu-trigger .str-3").toggleClass("bottom-animate");
+
+      return false;
+   });
+
+
+   // sub menu (on hover)
+   // ====================
+   $('#menu .sub-menu-trigger').on('mouseenter', function(){
+      $(this).next('.sub-menu').stop(true).delay(300).slideDown(300);
+      $(this).addClass('active');
+   });
+   $('#menu .has-children').on('mouseleave', function(){
+      $('.sub-menu').stop(true).delay(300).slideUp(300);
+      $('.sub-menu-trigger').removeClass('active');
+   });
+
+
+   // sub menu (on click)
+   // ====================
+   // $('#menu .sub-menu-trigger').on('click', function(){
+   //    //slide up all the link lists
+   //    $("#menu .sub-menu").slideUp(350);
+   //    //slide down the link list below the h3 clicked - only if its closed
+   //    if(!$(this).next().is(":visible")){
+   //       $(this).next().slideDown(350);
+   //    }
+   //    return false;
+   // })
+
+   // close sub menu on mouse leave
+   // $('#menu .menu-list').on('mouseleave', function(){
+   //    $('.sub-menu').stop(true).delay(600).slideUp(350);
+   // });
+
+
+   // close menu on outside click
+   // ============================
+   $(document).on("click",function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("menu")) {
+         // close menu
+         $(".menu-open #menu-trigger").click();
+      }
+   });
+
+
+
+   // =======================================================================================
+   // Defer videos (Youtube, Vimeo)
+   // Note: When you have embed videos in your webpages it causes your page to load slower.
+   // Deffering will allow your page to load quickly.
+   // Source: https://www.feedthebot.com/pagespeed/defer-videos.html
+   // =======================================================================================
+
+   function init() {
+   var vidDefer = document.getElementsByTagName('iframe');
+   for (var i=0; i<vidDefer.length; i++) {
+   if(vidDefer[i].getAttribute('data-src')) {
+   vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+   } } }
+   window.onload = init;
+
+
+
+   // ========================
+   // Element parallax effect
+   // ========================
+
+   $(window).scroll(function(){
+      var bgScroll = $(this).scrollTop();
+      if ( $(window).width() > 992) { // disable parallax on small devices.
+         // $('.parallax').css('background-position','center -'+ ((bgScroll*0.1)) +'px');
+         // $('.parallax').css('top', ''+ ((bgScroll*0.9)) +'px');
+         $('.parallax').css('transform', 'translate3d(0, '+ ((bgScroll * 0.4)) +'px, 0)');
+      }
+   });
+
 
 
    // =============================================
@@ -227,14 +307,59 @@
    // Source: http://www.webdesigncrowd.com/demo/circle-reveal-animation-12.23.13/
    // ==============================================================================
 
-   
+   $(".fav-count").on("click",function() {
+      var total = parseInt($(this).html(), 10);
+      if ($(this).parent().hasClass("active")) {
+         total -= 1;
+      } else {
+         total += 1;
+      }
+      $(this).html(total);
+      $(this).parent().toggleClass("active");
+   });
+
+   $(".icon-heart").on("click",function() {
+      var total = parseInt($(this).parent().siblings(".fav-count").first().html(), 10);
+      if ($(this).parent().parent().hasClass("active")) {
+         total -= 1;
+      } else {
+         total += 1;
+      }
+      $(this).parent().siblings(".fav-count").first().html(total);
+      $(this).parent().parent().toggleClass("active");
+   });
+
 
 
    // =========================================================================
    // Global search
    // =========================================================================
 
-   
+   $('#global-search-trigger').on("click",function() {
+      $('body').toggleClass('global-search-open');
+
+      return false;
+   });
+
+   // close button
+   $('.global-search-close').on("click",function() {
+      $(".global-search-open #global-search-trigger").click();
+      return false;
+   });
+
+   // close global search on outside click
+   $(document).on("click",function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("gl-s")) {
+         // close global search
+         $(".global-search-open #global-search-trigger").click();
+      }
+   });
+
+   // close global search on link click
+   $('#menu-trigger, #global-search .tab-content a, #global-search .isotope-filter a').on("click",function() {
+      $(".global-search-open #global-search-trigger").click();
+   });
 
 
 
@@ -242,8 +367,31 @@
    // Top filter
    // =========================================================================
 
+   $('#top-filter-trigger').on("click",function() {
+      $('body').toggleClass('top-filter-open');
+
+      return false;
+   });
+
+   // close button
+   $('.top-filter-close').on("click",function() {
+      $(".top-filter-open #top-filter-trigger").click();
+      return false;
+   });
+
+   // close top filter on outside click
+   $(document).on("click",function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("top-f")) {
+         // close top filter
+         $(".top-filter-open #top-filter-trigger").click();
+      }
+   });
+
    // close top filter on link click
-   
+   $('.isotope-filter a').on("click",function() {
+      $(".top-filter-open #top-filter-trigger").click();
+   });
 
 
 
@@ -287,6 +435,16 @@
    // Source: http://jqueryui.com/slider/#range
    // ===========================================
 
+   $("#price-range-slider").slider({
+      range: true,
+      min: 0,
+      max: 1000,
+      values: [ 0, 1000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+   });
+   $("#amount").val( "$" + $("#price-range-slider").slider("values", 0 ) + " - $" + $( "#price-range-slider" ).slider( "values", 1 ));
 
 
 
@@ -307,7 +465,21 @@
    // Shop single product quantity (plus/minus buttons)
    // ==================================================
    
-   
+   $(".qtybutton").on("click", function() {
+      var $button = $(this);
+      var oldValue = $button.parent().find("input").val();
+      if ($button.text() == "+") {
+        var newVal = parseFloat(oldValue) + 1;
+      } else {
+         // Don't allow decrementing below 1
+         if (oldValue > 1) {
+         var newVal = parseFloat(oldValue) - 1;
+         } else {
+            newVal = 1;
+         }
+      }
+      $button.parent().find("input").val(newVal);
+   });
 
 
 
@@ -315,7 +487,25 @@
    // Shop product filter 
    // ====================
 
-   
+   $('#shop-filter-trigger').on("click",function() {
+      $('body').toggleClass('shop-filter-open');
+      return false;
+   });
+
+   // close button
+   $('.shop-filter-close').on("click",function() {
+      $(".shop-filter-open #shop-filter-trigger").click();
+      return false;
+   });
+
+   // close filter on outside click
+   $(document).on("click",function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("s-filter")) {
+         // close filter
+         $(".shop-filter-open #shop-filter-trigger").click();
+      }
+   });
 
 
 
