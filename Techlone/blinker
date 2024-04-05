@@ -1,0 +1,15 @@
+@keyframes typing-blink {
+		0% {
+			width: 0;
+		}
+		80% {
+			width: 100%;
+		}
+		85%, 95% {
+			border-color: #06a08b;
+		}
+		100% {
+			width: calc(100% + .35em); /* Adjust for border width */
+			border-color: transparent;
+		}
+	}
