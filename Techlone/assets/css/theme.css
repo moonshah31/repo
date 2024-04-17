@@ -265,7 +265,7 @@ p {
 
 #header {
 	position: relative;
-	z-index: 99997;
+	z-index: 9997;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-o-transition: all 0.25s ease-in-out;
@@ -304,6 +304,8 @@ p {
 /* --------------------------------------------------- */
 
 #logo {
+	z-index: 1;
+	display: inline-block;
 	position: absolute;
 	margin-top: 1.5%;
 	left: 2%;
@@ -1230,213 +1232,6 @@ section {
 
 
 /* OWL controls */
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-	position: absolute;
-	border-radius: 6px;
-}
-
-/* Prev/Next buttons */
-.owl-nav {
-	margin: 0;
-}
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-	top: 50%;
-	border-radius: 6px;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background-color: #06a08b;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	font-size: 19px;
-	color: #FFF;
-	opacity: 0;
-	outline: none;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.owl-carousel .owl-nav button.owl-prev {
-	background-image: url(../img/arrow-left-dark.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.owl-carousel .owl-nav button.owl-next {
-	background-image: url(../img/arrow-right-dark.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.owl-carousel:hover .owl-nav button.owl-prev, .owl-carousel:hover .owl-nav button.owl-next {
-	opacity: 1;
-}
-.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
-	background-color: #06a08b;
-}
-.owl-carousel .owl-nav button.owl-prev {
-	left: 0px;
-}
-.owl-carousel .owl-nav button.owl-next {
-	right: 0px;
-}
-.owl-carousel:hover .owl-nav button.owl-prev {
-	left: 20px;
-}
-.owl-carousel:hover .owl-nav button.owl-next {
-	right: 20px;
-}
-
-/* Prev/Next buttons disabled (no loop) */
-.owl-carousel .owl-nav button.owl-prev.disabled {
-	opacity: 0;
-	visibility: hidden;
-	cursor: default;
-}
-.owl-carousel .owl-nav button.owl-next.disabled {
-	opacity: 0;
-	visibility: hidden;
-	cursor: default;
-}
-
-/* Prev/Next buttons rounded */
-.nav-rounded .owl-nav button.owl-prev, .nav-rounded .owl-nav button.owl-next {
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
-}
-
-
-/* Prev/Next nav buttons positions 
-=================================== */
-/* Prev/Next buttons position outside (left/right) */
-.owl-carousel.nav-outside .owl-nav button.owl-prev, .owl-carousel.nav-outside .owl-nav button.owl-next {
-	width: 40px;
-	height: 32px;
-	line-height: 40px;
-	background-color: transparent;
-	font-size: 17px;
-	color: #FFF;
-	opacity: 1;
-}
-.owl-carousel.nav-outside .owl-nav button.owl-prev:hover, .owl-carousel.nav-outside .owl-nav button.owl-next:hover {
-	color: #FFF;
-}
-.owl-carousel.nav-outside .owl-nav button.owl-prev.disabled, .owl-carousel.nav-outside .owl-nav button.owl-next.disabled {
-	opacity: 0;
-	visibility: hidden;
-}
-.owl-carousel.nav-outside .owl-nav button.owl-prev {
-	left: -55px;
-}
-.owl-carousel.nav-outside .owl-nav button.owl-next {
-	right: -55px;
-}
-@media (max-width: 1300px) {
-	.owl-carousel.nav-outside .owl-nav button.owl-prev, .owl-carousel.nav-outside .owl-nav button.owl-next {
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		background-color: #06a08b;
-		-webkit-background-size: 67%;
-		background-size: 67%;
-	}
-	.owl-carousel.nav-outside .owl-nav button.owl-prev {
-		left: 15px;
-	}
-	.owl-carousel.nav-outside .owl-nav button.owl-next {
-		right: 15px;
-	}
-}
-
-/* Prev/Next nav buttons position outside top */
-.nav-outside-top .owl-nav {
-	position: absolute;
-	top: -55px;
-	right: 1%;
-	width: 128px;
-}
-.nav-outside-top .owl-nav button.owl-prev, .nav-outside-top .owl-nav button.owl-next {
-	width: 60px;
-	height: 40px;
-	line-height: 40px;
-	background-color: #06a08b;
-	font-size: 14px;
-	color: #FFF;
-	opacity: 1;
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.nav-outside-top .owl-nav button.owl-prev:hover, .nav-outside-top .owl-nav button.owl-next:hover {
-	background-color: #06a08b;
-	color: #FFF;
-}
-.nav-outside-top .owl-nav button.owl-prev.disabled, .nav-outside-top .owl-nav button.owl-next.disabled {
-	visibility: visible;
-	opacity: .2;
-	color: #A4AAAD;
-}
-.nav-outside-top:hover .owl-nav button.owl-prev {
-	left: 0;
-}
-.nav-outside-top:hover .owl-nav button.owl-next {
-	right: 0;
-}
-
-/* Prev/Next nav buttons position bottom right */
-.nav-bottom-right .owl-nav {
-	position: absolute;
-	top: auto;
-	bottom: 85px;
-	right: 3%;
-	width: 128px;
-}
-@media (max-width: 768px) {
-	.nav-bottom-right .owl-nav {
-		bottom: 75px;
-		right: 20px;
-	}
-}
-.nav-bottom-right .owl-nav button.owl-prev, .nav-bottom-right .owl-nav button.owl-next {
-	width: 60px;
-	height: 40px;
-	line-height: 40px;
-	background-color: #06a08b;
-	font-size: 14px;
-	color: #FFF;
-	opacity: 1;
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.nav-bottom-right .owl-nav button.owl-prev:hover, .nav-bottom-right .owl-nav button.owl-next:hover {
-	background-color: #0c80ec;
-	color: #FFF;
-}
-.nav-bottom-right .owl-nav button.owl-prev.disabled, .nav-bottom-right .owl-nav button.owl-next.disabled {
-	visibility: visible;
-	opacity: .2;
-	color: #A4AAAD;
-}
-.nav-bottom-right:hover .owl-nav button.owl-prev {
-	left: 0;
-}
-.nav-bottom-right:hover .owl-nav button.owl-next {
-	right: 0;
-}
 
 
 /* Dots */
@@ -1873,8 +1668,9 @@ border-radius: 20px;
 .btn-primary { /* same as template main color */
 	color: #ffffff;
 	background-color: #06a08b;
-	border-color: #06a08b;
-	border-radius: 20rem;
+	border-color: #117fbe;
+	border-radius: 50rem;
+	opacity: 0.8;
 
 	
 }
@@ -2672,4 +2468,108 @@ input#footer-subscribe {
 .scrolltotop:hover {
 	background-color: #0c80ec;
 	color: #000;
+}
+
+
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: currentColor;
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading-spinner {
+	display: none;
+  }
+  
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
